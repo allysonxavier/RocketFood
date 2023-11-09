@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Container, Form, FormContent, FormFooter, FormHeader} from "./styles";
+import {Container, Form, FormContent, FormBox, FormHeader} from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
@@ -24,14 +24,14 @@ export function SignIn() {
           </FormHeader>
 
           <FormContent>
-              <FormFooter>
+              <FormBox>
               <label htmlFor="email">E-mail</label>
               <Input placeholder="E-mail" type="text"  onChange={e => setEmail(e.target.value)} />
-              </FormFooter>
-              <FormFooter>
+              </FormBox>
+              <FormBox>
               <label htmlFor="password">Senha</label>
               <Input placeholder="Senha" type="password"  onChange={e => setPassword(e.target.value)} />
-              </FormFooter>
+              </FormBox>
               <Button title="Entrar" onClick={handleSignIn} />
               <Link to="/register">Criar Conta</Link>
           </FormContent>

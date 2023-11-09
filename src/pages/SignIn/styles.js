@@ -54,7 +54,7 @@ export const FormContent = styled.div`
   
     `;
 
-export const FormFooter = styled.div`
+export const FormBox = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;

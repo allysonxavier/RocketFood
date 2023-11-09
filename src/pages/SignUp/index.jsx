@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Container, Form } from "./styles";
+import {Container, Form, FormContent, FormBox, FormHeader} from "./styles";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { api } from "../../services/api";
+import logo from "../../assets/logo.svg";
 export function SignUp() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -30,16 +31,29 @@ const navigate = useNavigate();
   return (
     <Container>
       <Form>
-        <h1>RocketNotes</h1>
-        <p>Aplicação para gerenciamento de links úteis</p>
-        <h2>Criar sua conta</h2>
-        <Input placeholder="Nome" type="text"  onChange={e => setName(e.target.value)} />
-        <Input placeholder="E-mail" type="text" onChange={e => setEmail(e.target.value)}/>
-        <Input placeholder="Senha" type="password"  onChange={e => setPassword(e.target.value)}  />
+        <FormHeader>
+          <img src={logo} alt="Food Explorer Logo" />
+          <h1>food explorer</h1>
+        </FormHeader>
+
+  <FormContent>
+        <FormBox>
+          <label htmlFor="name">Seu nome</label>
+          <Input placeholder="Nome" type="text"  onChange={e => setName(e.target.value)} />
+        </FormBox>
+        <FormBox>
+        <label htmlFor="email">E-mail</label>
+        <Input type="text" name="email" id="email" placeholder='E-mail' onChange={e => setEmail(e.target.value)} />
+        </FormBox>
+        <FormBox>
+        <label htmlFor="password">Senha</label>
+        <Input placeholder="Senha" type="password"  onChange={e => setPassword(e.target.value)} />
+        </FormBox>
         <Button title="Cadastrar" onClick={handleSignUp} />
         <Link to="/" href="#">
-          Voltar para o login
+          Já tenho uma conta
         </Link>
+  </FormContent>
       </Form>
     </Container>
   );
