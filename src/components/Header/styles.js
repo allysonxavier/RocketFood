@@ -12,8 +12,7 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   padding: 56px 28px 24px;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center;  
 `
 
 export const Title = styled(Link)`
@@ -25,8 +24,7 @@ export const Title = styled(Link)`
     justify-content: center;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
-    font-weight: bold;
-  
+    font-weight: bold; 
   
     > img {
         width: 26px;
