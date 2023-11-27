@@ -13,20 +13,24 @@ export const Container = styled.header`
   padding: 56px 28px 24px;
   justify-content: space-between;
   align-items: center;
+  
 `
 
 export const Title = styled(Link)`
     display: flex;
     align-items: center;
     width: 100%;
+    height: 100%;
     text-decoration: none;
     justify-content: center;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     font-family: ${({ theme }) => theme.FONTS.ROBOTO};
     font-weight: bold;
+  
+  
     > img {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
       margin-right: 8px;
     }
     `
@@ -36,6 +40,7 @@ export const ContentHeader = styled.div`
     width: 100%;
     align-items: center;
     padding: 8px 0;
+
 
     `
 
