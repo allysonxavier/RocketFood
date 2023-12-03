@@ -1,17 +1,17 @@
-import  { useState } from "react";
 import { Button } from "../Button";
 import {Container, MinusButton, PlusButton} from "./styles.js";
 
-export function ItemQuantityControl({ onAddToBag, itemName, itemPrice, isColumn= false }) {
-    const [quantity, setQuantity] = useState(1);
+export function ItemQuantityControl({ onAddToBag, itemName, itemPrice, quantity, onQuantityChange, isColumn= false }) {
 
     const handleAddQuantity = () => {
-        setQuantity(quantity + 1);
+        const newQuantity = quantity + 1;
+        onQuantityChange(newQuantity);
     };
 
     const handleRemoveQuantity = () => {
         if (quantity > 1) {
-            setQuantity(quantity - 1);
+            const newQuantity = quantity - 1;
+            onQuantityChange(newQuantity);
         }
     };
 

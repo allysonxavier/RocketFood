@@ -9,8 +9,7 @@ export const Container = styled.div`
     height: 100%;
     align-items: center;
     gap: 16px;
-    flex-direction: ${props => props.$isColumn ? 'column' : 'row'};
-  
+flex-direction: column;  
   >div{
     display: flex;
     align-items: center;
