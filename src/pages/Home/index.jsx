@@ -1,6 +1,5 @@
 import { Header } from "../../components/Header";
-import { CardItem } from "../../components/CardItem";
-import { ItemQuantityControl } from "../../components/ItemQuantityControl";
+import {BagComponent} from "../../components/BagComponent/index.jsx";
 import * as S from './styles.js';
 import MaskGroup from '../../assets/Maskgroup.png';
 
@@ -9,13 +8,19 @@ const itemExample = {
     price: 59.99,
     image: MaskGroup
 };
+const itemExample2 = {
+    name: "Camisa Verde",
+    price: 100.00,
+    image: MaskGroup
+};
+
 export function Home() {
     return (
         <div>
             <Header />
             <h1>Refeições</h1>
             <S.Container >
-            <CardItem item={itemExample} isColunm={true} onAddToBag={() => {console.log('oioi')}} />
+    <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup}/>
 
                 </S.Container>
 
