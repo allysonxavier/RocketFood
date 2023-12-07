@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Button} from "../Button";
 import MinusIcon from '../../assets/Minus.svg';
 import PlusIcon from '../../assets/Plus.svg';
+import T from '../../styles';
 
 export const CardItemContainer = styled.div`
     display: flex;
@@ -13,8 +14,7 @@ export const CardItemContainer = styled.div`
     height: 100%;
     padding: 24px;
     border-radius: 8px;
-    background-color: inherit;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: ${T.colors.DARK_300};
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -29,6 +29,11 @@ export const CardItemContainer = styled.div`
         
         object-fit: cover;
     }
+    
+    p{
+       color: ${T.colors.CAKE_200};
+        text-align: center;
+    }
   
     `;
 export const Container = styled.div`
@@ -39,6 +44,7 @@ export const Container = styled.div`
     align-items: center;
     gap: 16px;
 flex-direction: column;  
+    
   >div{
     display: flex;
     align-items: center;

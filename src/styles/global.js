@@ -1,22 +1,31 @@
 import { createGlobalStyle } from "styled-components";
+import T from "./index";
 export default createGlobalStyle`
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
 body{
-    background-color: ${({ theme }) => theme.COLORS.DARK_400};
+    background-color: ${T.colors.DARK_400};
 -webkit-font-smoothing: antialiased;
 }
 body, input, button, textarea{
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto, sans-serif';   
+    font-weight: ${T.fonts.sizes.regular};
+    font-size: ${T.fonts.sizes.xs};
     outline: none;
-    color: ${({ theme }) => theme.COLORS.LIGHT_400};
+    color: ${T.colors.LIGHT_400};
 }
+
 a{
     text-decoration:none;
+    font-family: 'Poppins, sans-serif';
 }
 
     button, a {

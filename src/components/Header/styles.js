@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { Button } from '../Button';
 import MenuIcon from '../../assets/menu.svg';
 import Note from '../../assets/Note.svg';
+import T from '../../styles';
 
 
 export const Container = styled.header`
   display: flex;
   width: 100%;
   height: 114px;
-  background-color: ${({ theme }) => theme.COLORS.DARK_700};
+  background-color: ${T.colors.DARK_700};
   padding: 56px 28px 24px;
   justify-content: space-between;
   align-items: center;  
@@ -22,8 +23,8 @@ export const Title = styled(Link)`
     height: 100%;
     text-decoration: none;
     justify-content: center;
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    font-family: ${({ theme }) => theme.FONTS.ROBOTO};
+    color: ${T.colors.LIGHT_100};
+    font-family: 'Roboto';
     font-weight: bold; 
   
     > img {

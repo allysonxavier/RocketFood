@@ -1,5 +1,4 @@
-export default {
-  COLORS: {
+export const colors = {
     LIGHT_100: "#FFFFFF",
     LIGHT_200: "#E1E1E6",
     LIGHT_300: "#C4C4CC",
@@ -31,9 +30,4 @@ export default {
     CAKE_100: "#82F3FF",
     CAKE_200: "#065E7C",
 
-  },
-    FONTS: {
-        ROBOTO: "'Roboto Slab', sans-serif",
-        POPPINS: "'Poppins', sans-serif",
-    },
 };

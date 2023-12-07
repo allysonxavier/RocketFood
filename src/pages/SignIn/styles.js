@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import T from "../../styles/index.js";
 
 export const Container = styled.div`
   display: flex;
@@ -27,7 +28,7 @@ export const FormHeader = styled.div`
 
   h1 {
     font-size: 38px;
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    color: ${T.colors.LIGHT_100};
   }
 `;
 
@@ -47,9 +48,9 @@ export const FormContent = styled.div`
   }
   
   a {
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    font-family: ${({ theme }) => theme.FONTS.POPPINS};
-    font-weight: 500; 
+    color: ${T.colors.LIGHT_100};
+    font-family: 'Poppins';
+    font-weight: ${T.fonts.weights.medium};
   }
   
     `;
