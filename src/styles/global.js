@@ -14,6 +14,7 @@ html {
 body{
     background-color: ${T.colors.DARK_400};
 -webkit-font-smoothing: antialiased;
+    padding: 0;
 }
 body, input, button, textarea{
     font-family: 'Roboto, sans-serif';   

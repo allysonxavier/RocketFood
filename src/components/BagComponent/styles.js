@@ -13,20 +13,20 @@ export const CardItemContainer = styled.div`
     min-height: 292px;
     height: 100%;
     padding: 24px;
+    gap: 12px;
     border-radius: 8px;
     background-color: ${T.colors.DARK_300};
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    
+        
     &:hover {
         transform: scale(1.05);
     }
   
     img {
         width: 88px;
-        height: 88px;
-        
+        height: 88px;        
         object-fit: cover;
     }
     
@@ -39,12 +39,14 @@ export const CardItemContainer = styled.div`
 export const Container = styled.div`
     display: flex;
     width: 100%;
-    padding: 24px;
     height: 100%;
     align-items: center;
     gap: 16px;
-flex-direction: column;  
-    
+    flex-direction: column; 
+
+    button {
+        height: 32px;
+    }
   >div{
     display: flex;
     align-items: center;
@@ -53,8 +55,6 @@ flex-direction: column;
     width: 100%;
     height: 100%;
     gap: 14px;
-    padding: 4px 0;
-
   }
 `;
 

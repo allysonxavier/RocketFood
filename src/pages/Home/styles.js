@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-  
+    display: flex;  
     width: 100%;
     max-width: 300px;
-    padding: 24px;
+    //padding: 24px;
     height: 100%;
     align-items: center;
-    gap: 16px;
+    //gap: 16px;
     flex-direction: column;
 >div{
         display: flex;
@@ -17,7 +16,6 @@ export const Container = styled.div`
         justify-content: center;
         width: 100%;
         height: 100%;
-        gap: 14px;
-        padding: 4px 0;
+        //gap: 14px;
     }
     `;
