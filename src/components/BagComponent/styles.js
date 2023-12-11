@@ -9,8 +9,9 @@ export const CardItemContainer = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-width: 210px;
-    min-height: 292px;
+    max-width: 210px;
+    max-height: 292px;
+ 
     height: 100%;
     padding: 24px;
     gap: 12px;
