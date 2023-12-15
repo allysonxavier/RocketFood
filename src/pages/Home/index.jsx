@@ -21,7 +21,7 @@ export function Home() {
             <Header />
             <h1>Refeições</h1>
             <S.Container >
-            <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup}/>
+            <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup} />
             </S.Container>
             <Footer />
 

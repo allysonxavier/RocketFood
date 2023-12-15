@@ -12,4 +12,10 @@ export const Container = styled.button`
   &:disabled {
     opacity: 0.5;
   }
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+    }
+    
 `;

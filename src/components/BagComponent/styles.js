@@ -2,9 +2,11 @@ import styled from "styled-components";
 import {Button} from "../Button";
 import MinusIcon from '../../assets/Minus.svg';
 import PlusIcon from '../../assets/Plus.svg';
+import FavoriteIcon from '../../assets/heart.svg';
 import T from '../../styles';
 
 export const CardItemContainer = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,3 +84,18 @@ export const PlusButton = styled(Button)`
     border: none;
     padding: 0;
 `;
+
+export const  FavoriteButton = styled(Button)`
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    padding: 0;        
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+    }
+    `
