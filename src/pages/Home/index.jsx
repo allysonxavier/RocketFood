@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
 import {BagComponent} from "../../components/BagComponent/index.jsx";
 import * as S from './styles.js';
 import MaskGroup from '../../assets/Maskgroup.png';
@@ -20,9 +21,9 @@ export function Home() {
             <Header />
             <h1>Refeições</h1>
             <S.Container >
-    <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup}/>
-
-                </S.Container>
+            <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup}/>
+            </S.Container>
+            <Footer />
 
         </div>
     )
