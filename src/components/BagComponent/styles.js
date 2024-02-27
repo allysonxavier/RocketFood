@@ -91,11 +91,23 @@ export const  FavoriteButton = styled(Button)`
     right: 16px;
     background-color: transparent;
     width: 24px;
-    height: 24px;
+    height: 22px;
     padding: 0;        
     img {
         width: 24px;
-        height: 24px;
+        height: 22px;
         object-fit: cover;
+        //background-color: red;
+        svg {
+            fill: red;
+            color: red;
+            background-color: red;
+            path { 
+                color:red;
+                background-color: red;
+                fill: red;
+            }
+        }
+        
     }
     `
