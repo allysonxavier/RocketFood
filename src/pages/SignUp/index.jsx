@@ -30,11 +30,11 @@ const navigate = useNavigate();
 
   return (
     <Container>
-      <Form>
         <FormHeader>
           <img src={logo} alt="Food Explorer Logo" />
           <h1>food explorer</h1>
         </FormHeader>
+      <Form>
 
   <FormContent>
         <FormBox>
@@ -50,7 +50,7 @@ const navigate = useNavigate();
         <Input placeholder="Senha" type="password"  onChange={e => setPassword(e.target.value)} />
         </FormBox>
         <Button title="Cadastrar" onClick={handleSignUp} />
-        <Link to="/" href="#">
+        <Link to="/" >
           Já tenho uma conta
         </Link>
   </FormContent>

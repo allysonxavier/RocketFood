@@ -6,8 +6,9 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  max-width: 316px;
-  padding-top: 158px
+    max-width: 365px;
+  padding-top: 158px;
+    flex-direction: column;
 `;
 
 export const Form = styled.form`
@@ -17,6 +18,7 @@ export const Form = styled.form`
   text-align: center;
   width: 100%;
   margin: 0 auto;
+    
 `;
 
 export const FormHeader = styled.div`
@@ -29,6 +31,7 @@ export const FormHeader = styled.div`
   h1 {
     font-size: 38px;
     color: ${T.colors.LIGHT_100};
+      font-weight: ${T.fonts.weights.bold};
   }
 `;
 
@@ -45,11 +48,13 @@ export const FormContent = styled.div`
   
   button{
     margin-bottom: 32px;
+    width: 100%;
+    height: 48px;
   }
   
   a {
     color: ${T.colors.LIGHT_100};
-    font-family: 'Poppins';
+    font-family: 'Poppins',serif;
     font-weight: 500; 
   }
   
@@ -61,5 +66,4 @@ export const FormBox = styled.div`
     justify-content: center;
     width: 100%;
     margin-bottom: 32px;
-    gap: 8px;
     `;

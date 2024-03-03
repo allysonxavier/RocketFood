@@ -7,7 +7,8 @@ export const Container = styled.div`
   height: 100vh;
   margin: 0 auto;
   max-width: 365px;
-  padding-top: 158px
+  padding-top: 158px;
+    flex-direction: column;
 `;
 
 export const Form = styled.form`
@@ -30,6 +31,8 @@ export const FormHeader = styled.div`
     font-size: 38px;
     color: ${T.colors.LIGHT_100};
       font-family: 'Roboto, sans-serif',serif;
+      font-weight: ${T.fonts.weights.bold};
+
   }
     
 `;

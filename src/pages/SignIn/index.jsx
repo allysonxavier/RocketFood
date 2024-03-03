@@ -17,11 +17,12 @@ export function SignIn() {
 
   return (
     <Container>
+        <FormHeader>
+            <img src={logo} alt="Food Explorer Logo" />
+            <h1>food explorer</h1>
+        </FormHeader>
       <Form>
-          <FormHeader>
-              <img src={logo} alt="Food Explorer Logo" />
-              <h1>food explorer</h1>
-          </FormHeader>
+
 
           <FormContent>
               <FormBox>
