@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import T from "../../styles/index.js";
 
 export  const Wrapper = styled.div`
     display: flex;
@@ -30,11 +31,13 @@ export const BannerBox = styled.div`
     justify-content: space-between;
     background-image: linear-gradient(to right, #091E26, #00131C);
     margin: 44px auto 62px;
+    gap: ${T.spacings.micro};
+    padding: 16px;
 
      img {
          width: 191px;
          height: 149px;
-        margin-left: -32px;
+        margin-left: -24px;
         margin-top: -24px;
     }
     
@@ -42,7 +45,7 @@ export const BannerBox = styled.div`
         width: 100%;
         h2 {
             font-family: "Poppins", sans-serif;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             margin-bottom: 3px;
         }
@@ -50,7 +53,6 @@ export const BannerBox = styled.div`
         p {
             font-family: "Poppins", sans-serif;
             font-size: 12px;
-            text-align: left;
         }
     }
 `
