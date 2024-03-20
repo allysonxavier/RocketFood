@@ -3,7 +3,7 @@ import { Footer } from "../../components/Footer";
 import {BagComponent} from "../../components/BagComponent/index.jsx";
 import * as S from './styles.js';
 import MaskGroup from '../../assets/Maskgroup.png';
-import Doces from '../../assets/docescaindo.png'
+import Candys from '../../assets/docescaindo.png'
 import CustomSwiper from '../../components/Slider/index';
 
 const itemExample = {
@@ -22,7 +22,7 @@ export function Home() {
         <S.Wrapper>
             <Header />
             <S.BannerBox>
-                <img src={Doces} alt="Doces"/>
+                <img src={Candys} alt="Doces"/>
                 <div>
                     <h2>Sabores inigualáveis</h2>
                     <p>Sinta o cuidado do preparo com ingredientes selecionados.
