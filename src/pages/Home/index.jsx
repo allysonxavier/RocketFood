@@ -4,10 +4,10 @@ import {BagComponent} from "../../components/BagComponent/index.jsx";
 import * as S from './styles.js';
 import MaskGroup from '../../assets/Maskgroup.png';
 import Doces from '../../assets/docescaindo.png'
-import {Wrapper} from "./styles.js";
+import CustomSwiper from '../../components/Slider/index';
 
 const itemExample = {
-    name: "Camisa Casual Azul",
+    name: "Salada Ravanello ",
     price: 59.99,
     image: MaskGroup
 };
@@ -31,7 +31,11 @@ export function Home() {
             </S.BannerBox>
             <S.Container>
             <h1>Refeições</h1>
-            <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup} />
+                <CustomSwiper>
+                    <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup} />
+                    <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup} />
+                    <BagComponent itemName={itemExample.name} itemPrice={itemExample.price} itemImageUrl={MaskGroup} />
+                </CustomSwiper>
             </S.Container>
             <Footer />
         </S.Wrapper>

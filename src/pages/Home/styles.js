@@ -9,13 +9,14 @@ export  const Wrapper = styled.div`
     height: 100%;
     max-width: 428px;
     margin: 0 auto;
+    overflow: hidden;
     `
 export const Container = styled.div`
-    display: flex;  
+    display: block;  
     width: 100%;
     height: 100%;
     flex-direction: column;
-    padding: 24px;
+    margin-left: 24px;
     h1 {
         text-align: left;
         margin-bottom: 24px;        

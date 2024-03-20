@@ -1,8 +1,4 @@
 import styled from "styled-components";
-import {Button} from "../Button";
-import MinusIcon from '../../assets/Minus.svg';
-import PlusIcon from '../../assets/Plus.svg';
-import FavoriteIcon from '../../assets/heart.svg';
 import T from '../../styles';
 
 export const CardItemContainer = styled.div`
@@ -13,7 +9,6 @@ export const CardItemContainer = styled.div`
     width: 100%;
     max-width: 210px;
     max-height: 292px;
- 
     height: 100%;
     padding: 24px;
     gap: 12px;
@@ -50,7 +45,7 @@ export const Container = styled.div`
     button {
         height: 32px;
     }
-  >div{
+  >div {
     display: flex;
     align-items: center;
     text-align: center ;
@@ -61,53 +56,9 @@ export const Container = styled.div`
   }
 `;
 
-export const MinusButton = styled(Button)`
-    background-color: transparent;
-    width: 24px;
-    height: 24px;    
-    background-image: url(${MinusIcon});
-    background-repeat: no-repeat;
-    background-size: 24px;  
-    background-position: center;
-    border: none;
-    padding: 0;
-    `;
-
-export const PlusButton = styled(Button)`
-    background-color: transparent;
-    width: 24px;
-    height: 24px;
-    background-image: url(${PlusIcon});
-    background-repeat: no-repeat;
-    background-size: 24px;  
-    background-position: center;
-    border: none;
-    padding: 0;
-`;
-
-export const  FavoriteButton = styled(Button)`
+export const FavoriteButton = styled.div`
     position: absolute;
-    top: 16px;
-    right: 16px;
-    background-color: transparent;
-    width: 24px;
-    height: 22px;
-    padding: 0;        
-    img {
-        width: 24px;
-        height: 22px;
-        object-fit: cover;
-        //background-color: red;
-        svg {
-            fill: red;
-            color: red;
-            background-color: red;
-            path { 
-                color:red;
-                background-color: red;
-                fill: red;
-            }
-        }
-        
-    }
-    `
+    right: 0;
+    margin-right: 16px;   
+
+`
