@@ -2,9 +2,9 @@ import * as S from './styles';
 import LogoIcon from '../../assets/logo.svg';
 import MenuIcon from '../../assets/menu.svg';
 import Note from '../../assets/Note.svg';
-import { Button } from '../Button';
+import  Button  from '../Button';
 
-export function Header() {
+const Header = () => {
 
     return(
         <S.Container>
@@ -19,3 +19,5 @@ export function Header() {
         </S.Container>
     )
 }
+
+export default Header;

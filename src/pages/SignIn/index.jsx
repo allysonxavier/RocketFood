@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {Container, Form, FormContent, FormBox, FormHeader} from "./styles";
-import { Input } from "../../components/Input";
-import { Button } from "../../components/Button";
+import  Input  from "../../components/Input";
+import  Button  from "../../components/Button";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../hooks/auth";
 import logo from "../../assets/logo.svg";

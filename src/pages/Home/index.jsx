@@ -1,10 +1,11 @@
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
-import {BagComponent} from "../../components/BagComponent/index.jsx";
+import  Header  from "../../components/Header";
+import  Footer  from "../../components/Footer";
+import BagComponent from "../../components/BagComponent/index.jsx";
 import * as S from './styles.js';
 import MaskGroup from '../../assets/Maskgroup.png';
-import Candys from '../../assets/docescaindo.png'
+import Candy from '../../assets/docescaindo.png'
 import CustomSwiper from '../../components/Slider/index';
+import Menu from '../../components/Menu/index';
 
 const itemExample = {
     name: "Salada Ravanello ",
@@ -18,11 +19,14 @@ const itemExample2 = {
 };
 
 export function Home() {
+
     return (
         <S.Wrapper>
+
             <Header />
+            <Menu />
             <S.BannerBox>
-                <img src={Candys} alt="Doces"/>
+                <img src={Candy} alt="Doces"/>
                 <div>
                     <h2>Sabores inigualáveis</h2>
                     <p>Sinta o cuidado do preparo com ingredientes selecionados.

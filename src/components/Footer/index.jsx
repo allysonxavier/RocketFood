@@ -2,7 +2,7 @@ import LogoIcon from '../../assets/logoDark.svg';
 import * as S from './styles';
 import {IconBox} from "./styles";
 
-export function Footer() {
+ const Footer = () => {
     return(
         <S.Container>
             <S.ContentFooter>
@@ -15,3 +15,5 @@ export function Footer() {
         </S.Container>
     )
 }
+
+export default Footer;

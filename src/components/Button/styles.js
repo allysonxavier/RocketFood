@@ -17,5 +17,4 @@ export const Container = styled.button`
         height: 24px;
         object-fit: cover;
     }
-    
 `;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {Container, Form, FormContent, FormBox, FormHeader} from "./styles";
-import { Input } from "../../components/Input";
-import { Button } from "../../components/Button";
+import Input  from "../../components/Input";
+import  Button  from "../../components/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { api } from "../../services/api";
 import logo from "../../assets/logo.svg";

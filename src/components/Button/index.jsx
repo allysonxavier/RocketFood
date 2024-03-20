@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-export function Button({ title, icon, ...rest }) {
+const Button = ({ title, icon, ...rest }) => {
     return (
         <Container type="button" {...rest}>
             {icon && <img src={icon} alt={title} />}
@@ -8,3 +8,5 @@ export function Button({ title, icon, ...rest }) {
         </Container>
     );
 }
+
+export default Button;

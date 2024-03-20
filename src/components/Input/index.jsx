@@ -1,9 +1,15 @@
 import { Container } from "./styles";
-export function Input({ icon: Icon, ...rest }) {
+const  Input = ({ icon: Icon, placeholder, value, onChange,...rest }) => {
   return (
     <Container>
-      {Icon && <Icon size={20} />}
-      <input {...rest} />
+      {Icon && <Icon size={24} />}
+      <input placeholder={placeholder}
+             value={value}
+             onChange={onChange}
+             {...rest}
+      />
     </Container>
   );
 }
+
+export default Input;

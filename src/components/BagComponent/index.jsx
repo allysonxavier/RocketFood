@@ -1,10 +1,10 @@
 import {useEffect, useState} from "react";
-import {Button} from "../Button";
+import Button from "../Button";
 import * as S from "./styles.js";
 import { FaRegHeart } from "react-icons/fa";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
-export function BagComponent({itemName, itemPrice, itemImageUrl, isColumn = false}) {
+const BagComponent = ({itemName, itemPrice, itemImageUrl, isColumn = false}) => {
     const [quantity, setQuantity] = useState(1);
     const [price, setPrice] = useState(itemPrice);
     const [itemsInBag, setItemsInBag] = useState([]);
@@ -87,3 +87,5 @@ export function BagComponent({itemName, itemPrice, itemImageUrl, isColumn = fals
         </S.CardItemContainer>
     );
 }
+
+export default BagComponent;
